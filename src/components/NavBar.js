@@ -1,61 +1,32 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFire, faUser } from '@fortawesome/free-solid-svg-icons'
-
-const isLogin = false
 
 const NavBar = () => {
-  const [visible, setVisible] = useState(false)
 
-  const handleCloseSession = () => {
-
-  }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
+              <Link className="nav-link active" aria-current="page" to="/">Home</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
+              <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Eventos
+              </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
+                <li><Link className="dropdown-item" to="#">Online</Link></li>
+                <li><Link className="dropdown-item" to="#">Presencial</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                <li><Link className="dropdown-item" to="#">Historico</Link></li>
               </ul>
             </li>
-
           </ul>
-          <FontAwesomeIcon icon={faFire} className='' />
-          <div>
-            {
-              isLogin ?
-                <div  >
-                  <p>Bienvenido, !</p>
-                    <Link to={'/'} onClick={handleCloseSession}>Cerrar sesion</Link>  
-                </div>
-                :
-                <div>
-                    <Link className='btn btn-light' to='/login'>Ingresar</Link>
-                    <Link className='btn btn-dark' to='/create'>Crear cuenta</Link>
-                </div>
-
-            }
-          </div>
         </div>
       </div>
-
     </nav>
   )
 }
