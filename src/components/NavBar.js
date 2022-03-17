@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faFire, faUser } from '@fortawesome/free-solid-svg-icons'
-import '../styles/NavBar.css'
+import { faFire, faUser } from '@fortawesome/free-solid-svg-icons'
 
 const isLogin = false
 
