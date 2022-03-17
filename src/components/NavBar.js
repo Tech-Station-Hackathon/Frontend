@@ -7,7 +7,7 @@ import '../styles/NavBar.css'
 
 const isLogin = false
 
-export const NavBar = () => {
+const NavBar = () => {
   const [visible, setVisible] = useState(false)
 
   const handleCloseSession = () => {
@@ -61,3 +61,5 @@ export const NavBar = () => {
     </nav>
   )
 }
+
+export default NavBar;
