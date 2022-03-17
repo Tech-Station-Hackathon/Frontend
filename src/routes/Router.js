@@ -4,19 +4,22 @@ import Header from "../components/Header";
 import Login from '../components/Login'
 import Home from "../pages/Home";
 import NotFound from '../pages/NotFound'
+import { UserProvider } from '../context/UserContext';
 
 
 const Routers = () => {
-    return (      
-        <BrowserRouter>
-            <Header/>
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/create' element={<CreateAccount />} />
-                <Route path='/login' element={<Login />} />
-                <Route path="*" element={<NotFound />} />
-            </Routes>
-        </BrowserRouter>
+    return (
+        <UserProvider>
+            <BrowserRouter>
+                <Header />
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/create' element={<CreateAccount />} />
+                    <Route path='/login' element={<Login />} />
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
+            </BrowserRouter>
+        </UserProvider>
     );
 }
 
