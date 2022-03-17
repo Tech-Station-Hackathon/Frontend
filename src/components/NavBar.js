@@ -19,9 +19,9 @@ const NavBar = () => {
                       Eventos
                     </Link>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><Link className="dropdown-item" to="/event">Próximos</Link></li>
+                      <li><Link className="dropdown-item" to="/eventcontainernext">Próximos</Link></li>
                       <li><hr className="dropdown-divider" /></li>
-                      <li><Link className="dropdown-item" to="/event">Historico</Link></li>
+                      <li><Link className="dropdown-item" to="/eventcontainerhist">Históricos</Link></li>
                       
                     </ul>
                   </li>

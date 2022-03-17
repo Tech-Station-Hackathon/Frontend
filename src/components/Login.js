@@ -21,7 +21,7 @@ const Login = () => {
   }
 
   useEffect(() => {
-    if (isLogin()) navigate('/')
+    if (isLogin()) navigate('/HomeRegistered')
   })
 
   return (

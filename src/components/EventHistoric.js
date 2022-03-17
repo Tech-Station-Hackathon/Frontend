@@ -1,6 +1,10 @@
-// Detalle del Evento
+// Detalle del Evento Historico
 
-const Event = (evento) => {
+const reproducirEvento = () => {
+
+} 
+ 
+const EventHistoric = (evento) => {
     return (
         <>
             <br/><br/>
@@ -9,7 +13,7 @@ const Event = (evento) => {
                 <div className="card-body">
                     <h5 className="card-title">{evento.title}</h5>
                     <p className="card-text">{evento.description}</p>
-                    <p className="card-text">Fecha del Evento: {evento.datetime}</p>
+                    <button type="button" onClick={() => reproducirEvento()} className="btn btn-primary btn-sm add" >Reproducir Evento</button>
                 </div>
             </div>
             <br/><br/>
@@ -17,4 +21,4 @@ const Event = (evento) => {
     );
 }
 
-export default Event;   
+export default EventHistoric;   
