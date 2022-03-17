@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-// Logo de la pagina web
-=======
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { userContext } from '../context/UserContext';
 
 
->>>>>>> 98852808d5480b3ae0ce63c97e4459f3101c2f7f
 const Logo = () => {
     const { isLogin } = useContext(userContext);
 
@@ -15,9 +11,9 @@ const Logo = () => {
             {
 
                 isLogin() ?
-                    <Link to="/" >LOGO</Link>
+                    <Link to="/homeRegistered" ><img src="https://cdn.discordapp.com/attachments/952957593020661780/954109047135690832/logoequipo4.jpg" alt="LOGO" /></Link>
                     :
-                    <Link to="/login" >LOGO</Link>
+                    <></>
             }
         </div>
     );

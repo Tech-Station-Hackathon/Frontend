@@ -12,7 +12,7 @@ export const UserProvider = ({ children }) => {
             email: user.email,
             password: user.passwor,
             login: user.login,
-            permissions:user.permissions
+            rol:user.rol
         })
     }
 
