@@ -1,16 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { userContext } from '../context/UserContext';
 
-const isLogin = true
 const NavBar = () => {
+  const { isLogin } = useContext(userContext);
 
 
   return (
     <div className="col-4">
       {
         isLogin ?
-          <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container-fluid">
+          <nav className="navbar navbar-expand-md navbar-light bg-light">
+            <div className="container-fluid">
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item dropdown">

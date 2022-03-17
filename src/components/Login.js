@@ -13,6 +13,7 @@ const Login = () => {
   const handleForm = (event) => {
     event.preventDefault()
     login(user.email, user.password)
+    console.log(`Login=> EMAIL:${user.email} PASSWORD:${user.password}`)
   }
 
   const handleChangeUser = ({ name, value }) => {
@@ -33,10 +34,10 @@ const Login = () => {
           onChange={({ target }) => handleChangeUser(target)}>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Email</label>
-            <input type="text" id="email" placeholder="ejemplo@hacker.com" className="form-control" value={user.email} />
+            <input type="text" name="email" placeholder="ejemplo@hacker.com" className="form-control" value={user.email} required/>
 
             <label htmlFor="password" className="form-label">Contraseña</label>
-            <input type="password" id="password" placeholder="*********" className="form-control" value={user.password} />
+            <input type="password" name="password" placeholder="*********" className="form-control" value={user.password} minLength="6" required/>
           </div>
           <div className="mb-3 ">
             <input type="submit" value="Ingresar" className="btn btn-primary mb-3" />

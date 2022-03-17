@@ -5,7 +5,7 @@ import UserWidget from "./UserWidget";
 const Header = () => {
     return (
         <div className="container-fluid bg-light">
-            <div class="row justify-content-md-center">
+            <div className="row justify-content-md-center">
                 <NavBar/>
                 <Logo />
                 <UserWidget />

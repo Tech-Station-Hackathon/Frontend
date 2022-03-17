@@ -1,5 +1,6 @@
 import React, { createContext, useState } from "react";
 
+
 export const userContext = createContext();
 
 export const UserProvider = ({ children }) => {
@@ -28,10 +29,17 @@ export const UserProvider = ({ children }) => {
     }
 
     const login = (userEmail, userPassword) => {
-        const getProducts = async () => {
-            
+        setUser({email:userEmail,paswword:userPassword, login:true})
+      /*const getProducts = async () => {
+            const { docs } = await
+                getDocs(query(collection(db, "users"),
+                    where("email", "==", userEmail),
+                    where("password", "==", userPassword)))
+            docs.forEach((doc) => {
+                setUser({ ...doc.data(), login: true })
+            })
         }
-        getProducts()
+        getProducts()*/
     }
     return <userContext.Provider value={{ isUser, isLogin, addUser, user, setUser, login, closeSession }}>
         {children}
