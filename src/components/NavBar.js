@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <div className="col-4">
       {
-        isLogin ?
+        isLogin() ?
           <nav className="navbar navbar-expand-md navbar-light bg-light">
             <div className="container-fluid">
               <div className="collapse navbar-collapse" id="navbarSupportedContent">

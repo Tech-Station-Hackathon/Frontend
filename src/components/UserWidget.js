@@ -4,11 +4,12 @@ import { userContext } from '../context/UserContext';
 
 
 const UserWidget = () => {
-  const { isLogin,closeSession} = useContext(userContext);
+  const { isLogin, closeSession} = useContext(userContext);
 
   const handleCloseSession = () => {
     closeSession()
   }
+  
   return (
     <nav className='col-4 navbar navbar-expand-lg navbar-light bg-light justify-content-end' >
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,10 +18,10 @@ const UserWidget = () => {
       <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 
         {
-          isLogin ?
+          isLogin() ?
             <div className='navbar-nav '>
               <p className=' d-none d-lg-flex me-md-2 mb-2 mb-lg-0 nav-item' >Bienvenido,Tech !</p>
-              <Link className='btn btn-dark me-md-2 nav-item' to='/login' onClick={handleCloseSession}>Cerrar sesion</Link>
+              <Link onClick={handleCloseSession} className='btn btn-dark me-md-2 nav-item' to='/login' >Cerrar sesion</Link>
             </div>
             :
             <div className='navbar-nav' >

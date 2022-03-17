@@ -9,15 +9,16 @@ export const UserProvider = ({ children }) => {
     const addUser = (user) => {
         setUser({
             name: user.name,
-            phone: user.phone,
             email: user.email,
             password: user.passwor,
-            login: user.login
+            login: user.login,
+            permissions:user.permissions
         })
     }
 
     const closeSession = () => {
         setUser({ login: false })
+        sessionStorage.clear()
     }
 
     const isLogin = () => {
@@ -29,8 +30,11 @@ export const UserProvider = ({ children }) => {
     }
 
     const login = (userEmail, userPassword) => {
-        setUser({email:userEmail,paswword:userPassword, login:true})
-      /*const getProducts = async () => {
+        setUser({email:userEmail,password:userPassword, login:true})
+        sessionStorage.setItem(userEmail, JSON.stringify("email"))
+
+      /*
+      const getProducts = async () => {
             const { docs } = await
                 getDocs(query(collection(db, "users"),
                     where("email", "==", userEmail),

@@ -10,7 +10,7 @@ const Logo = () => {
         <div className="col-4">
             {
 
-                isLogin ?
+                isLogin() ?
                     <Link to="/" className=""><img src="" alt="Telecom" className="d-inline-block align-text-center" width="30" height="24" /></Link>
                     :
                     <Link to="/login" ><img src="" alt="Telecom" /></Link>
