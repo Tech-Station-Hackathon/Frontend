@@ -39,7 +39,7 @@ const EventContainer = () => {
     return (
         <>
             <br/><br/>
-            <div className="container">
+            <div className="container h-100">
                 <div className="row">
                     <div className="col-3">
                     </div>

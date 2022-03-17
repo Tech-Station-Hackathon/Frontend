@@ -11,7 +11,7 @@ const Logo = () => {
             {
 
                 isLogin() ?
-                    <Link to="/homeRegistered" ><img className="h-25" src="https://cdn.discordapp.com/attachments/952957593020661780/954109047135690832/logoequipo4.jpg" alt="LOGO" /></Link>
+                    <Link to="/homeRegistered" ><img   src="https://cdn.discordapp.com/attachments/952957593020661780/954109047135690832/logoequipo4.jpg" alt="LOGO" /></Link>
                     :
                     <img src="https://cdn.discordapp.com/attachments/952957593020661780/954109047135690832/logoequipo4.jpg" alt="LOGO" />
             }
