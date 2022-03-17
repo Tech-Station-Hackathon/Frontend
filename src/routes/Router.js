@@ -8,8 +8,8 @@ import HomeRegistered from "../pages/HomeRegistered";
 import NotFound from '../pages/NotFound'
 import Footer from "../components/Footer"
 import MediaPlayer from "../components/MediaPlayer"
-import EventContainerNext from "../components/EventContainerNext";
-import EventContainerHist from "../components/EventContainerHist";
+import NextEvents from "../pages/NextEvents";
+import HistoricEvents from "../pages/HistoricEvents";
 
 const Routers = () => {
     return (
@@ -22,8 +22,8 @@ const Routers = () => {
                     <Route path='/create' element={<CreateAccount />} />
                     <Route path='/login' element={<Login />} />
                     <Route path="/media" element={<MediaPlayer/>} />
-                    <Route path="/eventcontainernext" element={<EventContainerNext/>} />
-                    <Route path="/eventcontainerhist" element={<EventContainerHist/>} />
+                    <Route path="/nextevents" element={<NextEvents />} />
+                    <Route path="/historicevents" element={<HistoricEvents/>} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </BrowserRouter>
