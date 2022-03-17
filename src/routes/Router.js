@@ -1,3 +1,7 @@
+import { Login } from './components/Login';
+import { CreateAccount } from './components/CreateAccount';
+import { NotFound } from './pages/NotFound';
+import { Home } from './pages/Home';
 import { Routes, Route } from "react-router-dom";
 
 const Routers = () => {
