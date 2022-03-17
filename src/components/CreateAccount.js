@@ -6,20 +6,25 @@ export const CreateAccount = () => {
     <div className="login">
       <div className="form-container">
         <h1 className="title">Mi cuenta</h1>
-        <form action="/" className="form">
-          <div>
-            <label htmlFor="name" className="label">Nombre</label>
-            <input type="text" id="name" placeholder="Tech" className="input input-name" />
 
-            <label htmlFor="email" className="label">Email</label>
-            <input type="text" id="email" placeholder="ejemplo@hacker.com" className="input input-email" />
-
-            <label htmlFor="password" className="label">Contraseña</label>
-            <input type="password" id="password" placeholder="*********" className="input input-password" minLength={3}/>
+        <form>
+          <div className="mb-3">
+            <label htmlFor="nombre" className="form-label">Nombre </label>
+            <input type="nombre" id="nombre" className="form-control" placeholder="Tech" />
           </div>
-
-          <input type="submit" value="Crear cuenta" className="primary-button login-button" />
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label">Email </label>
+            <input type="email" id="email" className="form-control" placeholder="ejemplo@hacker.com" aria-describedby="emailHelp" />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="password" className="form-label">Contraseña</label>
+            <input type="password" id="password" className="form-control" placeholder="*********" />
+          </div>
+          <div className="mb-3">
+          </div>
+          <button type="submit" className="btn btn-primary">Crear cuenta</button>
         </form>
+
       </div>
     </div>
   )
