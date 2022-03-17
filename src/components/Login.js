@@ -25,24 +25,6 @@ const Login = () => {
   })
 
   return (
-<<<<<<< HEAD
-    <>
-      <div className="login">
-        <div className="form-container">
-          
-
-            <label htmlFor="email" className="label">Email</label>
-            <input type="text" id="email" placeholder="ejemplo@hacker.com" className="input input-email" />
-
-            <label htmlFor="password" className="label">Contraseña</label>
-            <input type="password" id="password" placeholder="*********" className="input input-password" />
-
-            <input type="submit" value="Iniciar sesión" className="primary-button login-button" />
-            <a href="/">Olvidé mi contraseña</a>
-
-          <button className="secondary-button signup-button">Registrarme</button>
-        </div>
-=======
     <div className="d-flex justify-content-center ">
       <div className="mt-5 p-4 border border-secondary rounded-3">
         <form
@@ -64,7 +46,6 @@ const Login = () => {
 
         <Link to="/" className="btn">Olvidé mi contraseña</Link>
         <Link to="/create" className="btn">Registrarme</Link>
->>>>>>> 98852808d5480b3ae0ce63c97e4459f3101c2f7f
       </div>
     </div>
 

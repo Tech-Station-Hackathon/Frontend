@@ -20,10 +20,9 @@ const NavBar = () => {
                     </Link>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><Link className="dropdown-item" to="/event">Próximos</Link></li>
-                      <li><Link className="dropdown-item" to="/event/online">Online</Link></li>
-                      <li><Link className="dropdown-item" to="/event">Presencial</Link></li>
                       <li><hr className="dropdown-divider" /></li>
                       <li><Link className="dropdown-item" to="/event">Historico</Link></li>
+                      
                     </ul>
                   </li>
                 </ul>
