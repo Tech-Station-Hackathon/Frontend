@@ -1,15 +1,12 @@
 // Encabezado de la Pagina 
 import Logo from "./Logo";
-import Login from "./Login";
+import NavBar from "./NavBar";
 
 const Header = () => {
     return (
         <>
-
-                    <Logo />  
-
-
-
+            <NavBar/>
+            <Logo />  
         </>
     );
 }

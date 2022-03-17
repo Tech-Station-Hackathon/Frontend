@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/CreateAccount.css'
 
-export const CreateAccount = () => {
+const CreateAccount = () => {
   return (
     <div className="login">
       <div className="form-container">
@@ -29,3 +29,6 @@ export const CreateAccount = () => {
     </div>
   )
 }
+
+
+export default CreateAccount;

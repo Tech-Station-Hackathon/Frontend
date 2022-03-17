@@ -6,9 +6,7 @@ import './App.css';
 const HomeRegistered = () => {
   return (
     <BrowserRouter>
-      <Header />
-      <Routers />
-      <NavBar />
+      
     </BrowserRouter>
   )
 }
