@@ -21,7 +21,17 @@ npm install --save @fortawesome/free-solid-svg-icons
 npm install --save @fortawesome/react-fontawesome
 ```
 
+```FooterStyle (manage style v. 5.3.3)```
+ ```jsx
+$ npm install styled-components
+```
 
+- Paquete React-Player v. 2.9.0
+npm i react-player
+
+- Utilizados para el Carrousel
+npm install react-bootstrap 
+npm install bootstrap
 ## Comenzando 🚀
 
 _Deberás Forkear este proyecto si quieres tener una copia en tu propio repositorio de GitHub._

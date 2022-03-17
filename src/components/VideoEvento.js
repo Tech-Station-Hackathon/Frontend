@@ -2,6 +2,8 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
+import "../styles/VideoEvento.css"
+
 const VideoEvento = () => {
 
     return (
