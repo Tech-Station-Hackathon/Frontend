@@ -19,22 +19,21 @@ const Login = () => {
   const handleChangeUser = ({ name, value }) => {
     setUser({ ...user, [name]: value })
   }
+
   useEffect(() => {
     if (isLogin()) navigate('/')
   })
 
   return (
-    <div className="login">
-      <div className="form-container">
-        <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/122020/flow.png?0_ZwcZrYb5krHrLahUR4efi12mYCc27m&itok=EpMk_AqO" alt="logo" className="logo" />
-
+    <div className="d-flex justify-content-center ">
+      <div className="mt-5 p-4 border border-secondary rounded-3">
         <form
           onSubmit={handleForm}
           className="form"
           onChange={({ target }) => handleChangeUser(target)}>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Email</label>
-            <input type="text" name="email" placeholder="ejemplo@hacker.com" className="form-control" value={user.email} required/>
+            <input type="email" name="email" placeholder="ejemplo@hacker.com" className="form-control" value={user.email} required/>
 
             <label htmlFor="password" className="form-label">Contraseña</label>
             <input type="password" name="password" placeholder="*********" className="form-control" value={user.password} minLength="6" required/>

@@ -3,9 +3,9 @@ import '../styles/CreateAccount.css'
 
 const CreateAccount = () => {
   return (
-    <div className="login">
-      <div className="form-container">
-        <h1 className="title">Mi cuenta</h1>
+    <div className="d-flex justify-content-center ">
+      <div className="mt-5 p-4 border border-secondary rounded-3">
+        <h1 >Mi cuenta</h1>
 
         <form>
           <div className="mb-3">

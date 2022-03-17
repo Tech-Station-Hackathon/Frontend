@@ -7,13 +7,13 @@ const Logo = () => {
     const { isLogin } = useContext(userContext);
 
     return (
-        <div className="col-4">
+        <div className="col-4 d-flex justify-content-center">
             {
 
                 isLogin() ?
-                    <Link to="/" className=""><img src="" alt="Telecom" className="d-inline-block align-text-center" width="30" height="24" /></Link>
+                    <Link to="/" >LOGO</Link>
                     :
-                    <Link to="/login" ><img src="" alt="Telecom" /></Link>
+                    <Link to="/login" >LOGO</Link>
             }
         </div>
     );

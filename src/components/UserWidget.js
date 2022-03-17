@@ -4,7 +4,7 @@ import { userContext } from '../context/UserContext';
 
 
 const UserWidget = () => {
-  const { isLogin, closeSession} = useContext(userContext);
+  const { isLogin, closeSession,user} = useContext(userContext);
 
   const handleCloseSession = () => {
     closeSession()
@@ -20,7 +20,7 @@ const UserWidget = () => {
         {
           isLogin() ?
             <div className='navbar-nav '>
-              <p className=' d-none d-lg-flex me-md-2 mb-2 mb-lg-0 nav-item' >Bienvenido,Tech !</p>
+              <p className=' d-none d-lg-flex me-md-2 mb-2 mb-lg-0 nav-item' >{ user.email}</p>
               <Link onClick={handleCloseSession} className='btn btn-dark me-md-2 nav-item' to='/login' >Cerrar sesion</Link>
             </div>
             :
