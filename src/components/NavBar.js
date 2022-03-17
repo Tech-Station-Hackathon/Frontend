@@ -47,8 +47,8 @@ export const NavBar = () => {
                 </div>
                 :
                 <div>
-                    <Link className='dropdown-item' to='/login'>Ingresar</Link>
-                    <Link className='dropdown-item' to='/create'>Crear cuenta</Link>
+                    <Link className='btn btn-light' to='/login'>Ingresar</Link>
+                    <Link className='btn btn-dark' to='/create'>Crear cuenta</Link>
                 </div>
 
             }
