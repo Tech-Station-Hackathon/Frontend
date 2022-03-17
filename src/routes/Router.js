@@ -7,7 +7,7 @@ import NotFound from '../pages/NotFound'
 import { UserProvider } from '../context/UserContext';
 import HomeRegistered from "../components/HomeRegistered";
 import Footer from "../components/Footer"
-import VideoEvento from "../components/VideoEvento"
+import MediaPlayer from "../components/MediaPlayer"
 
 const Routers = () => {
     return (
@@ -19,7 +19,7 @@ const Routers = () => {
                     <Route path='/homeRegistered' element={<HomeRegistered />} />
                     <Route path='/create' element={<CreateAccount />} />
                     <Route path='/login' element={<Login />} />
-                    <Route path="/videoEvento" element={<VideoEvento/>} />
+                    <Route path="/media" element={<MediaPlayer/>} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </BrowserRouter>

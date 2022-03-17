@@ -4,7 +4,7 @@ import '../styles/CreateAccount.css'
 const CreateAccount = () => {
   return (
     <div className="d-flex justify-content-center ">
-      <div className="mt-5 p-4 border border-secondary rounded-3">
+      <div className="m-5 p-4 border border-secondary rounded-3">
         <h1 >Mi cuenta</h1>
 
         <form>
