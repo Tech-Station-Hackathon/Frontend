@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { userContext } from '../context/UserContext';
 
+import '../styles/UserWidget.css'
 
 const UserWidget = () => {
   const { isLogin, closeSession,user} = useContext(userContext);
@@ -19,14 +20,14 @@ const UserWidget = () => {
 
         {
           isLogin() ?
-            <div className='navbar-nav '>
+            <div className='navbar-nav align-items-center'>
               <p className=' d-none d-lg-flex me-md-2 mb-2 mb-lg-0 nav-item' >{ user.email}</p>
-              <Link onClick={handleCloseSession} className='btn btn-dark me-md-2 nav-item' to='/login' >Cerrar sesion</Link>
+              <Link onClick={handleCloseSession} className='btn me-md-2 nav-item bg-blue text-light' to='/login' >Cerrar sesion</Link>
             </div>
             :
             <div className='navbar-nav' >
-              <Link className='btn btn-light me-md-2' to='/login'>Ingresar</Link>
-              <Link className='btn btn-dark me-md-2' to='/create'>Crear cuenta</Link>
+              <Link className='btn btn-light me-md-2 color-blue' to='/login'>Ingresar</Link>
+              <Link className='btn  me-md-2 bg-blue text-light' to='/create'>Crear cuenta</Link>
             </div>
         }
 

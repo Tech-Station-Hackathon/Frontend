@@ -15,7 +15,7 @@ const NavBar = () => {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item dropdown">
-                    <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <Link className="nav-link dropdown-toggle text-dark" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Eventos
                     </Link>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">

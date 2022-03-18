@@ -25,7 +25,7 @@ const Login = () => {
   })
 
   return (
-    <div className="d-flex justify-content-center ">
+    <div className="d-flex justify-content-center  ">
       <div className="m-5 p-4 border border-secondary rounded-3">
         <form
           onSubmit={handleForm}
@@ -39,13 +39,13 @@ const Login = () => {
             <input type="password" name="password" placeholder="*********" className="form-control" value={user.password} minLength="6" required/>
           </div>
           <div className="mb-3 ">
-            <input type="submit" value="Ingresar" className="btn btn-primary mb-3" />
+            <input type="submit" value="Ingresar" className="btn hover-overlay text-light bg-blue mb-3" />
           </div>
 
         </form>
 
-        <Link to="/" className="btn">Olvidé mi contraseña</Link>
-        <Link to="/create" className="btn">Registrarme</Link>
+        <Link to="/" className="btn btn-link">Olvidé mi contraseña</Link>
+        <Link to="/create" className="btn btn-link">Registrarme</Link>
       </div>
     </div>
 
