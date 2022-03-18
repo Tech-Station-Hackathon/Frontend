@@ -1,10 +1,12 @@
 p.foo {
   font-size: 15px;
-  color: white; }
+  color: white;
+}
 
 .divFooter {
-background-color:black;
+  background-color:black;
   bottom: 0;
   width: 100%;
   height: 30px;
-  background: linear-gradient(90deg, #09090a 30%, #626263 50%); }
+  background: linear-gradient(90deg, #09090a 30%, #626263 50%);
+}

@@ -1,3 +1,4 @@
+import React from 'react';
 import EventHistoric from './EventHistoric';
 
 const eventos = [

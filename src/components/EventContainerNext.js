@@ -1,3 +1,4 @@
+import React from 'react';
 import EventRegistered from './EventRegistered';
 
 const eventos = [

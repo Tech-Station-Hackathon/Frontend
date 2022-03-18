@@ -1,4 +1,4 @@
-// Componente Carrusel de Imagenes
+import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import Carrusel1 from '../assets/Carrusel1.jpg';
 import Carrusel2 from '../assets/Carrusel2.jpg';
