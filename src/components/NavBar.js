@@ -14,7 +14,7 @@ const NavBar = () => {
 							<div className="" id="navbarSupportedContent">
 								<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 									{user.role === 'director' ?
-										<Link className="nav-link" to="/historicevents">Analíticas</Link>
+										<Link className="nav-link" to="/RolDirector">Analíticas</Link>
 										: <></>
 									}
 									<li className="nav-item dropdown">

@@ -29,7 +29,7 @@ export const UserProvider = ({ children }) => {
 		};
 		const optionPOST =
 		{
-			method: 'POST/register',
+			method: 'POST',
 			body: userToAdd
 		};
 
@@ -51,9 +51,17 @@ export const UserProvider = ({ children }) => {
 	const isLogin = () => {
 		return (user.login ? true : false);
 	};
-
+  
 	const isUser = (userEmail, userPassword) => {
 		return (user.email === userEmail && user.password === userPassword ? true : false);
+	};
+
+	const isAdmin = ()=>{
+		return (user.role==='admin'?true:false);
+	};
+
+	const isDirector = ()=>{
+		return (user.role==='director'?true:false);
 	};
 
 	const login = (userEmail, userPassword) => {
@@ -83,7 +91,7 @@ export const UserProvider = ({ children }) => {
 
 	};
 
-	return <userContext.Provider value={{ isUser, isLogin, addUser, user, setUser, login, closeSession }}>
+	return <userContext.Provider value={{ isUser, isLogin, addUser, user, setUser, login, closeSession,isAdmin , isDirector}}>
 		{children}
 	</userContext.Provider>;
 };
