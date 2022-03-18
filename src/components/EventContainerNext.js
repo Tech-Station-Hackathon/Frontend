@@ -10,6 +10,7 @@ const EventContainerNext = () => {
 		let getEvents = async () => {
 			let response = await fetch('http://techstationhackathon.herokuapp.com/api/events');
 			let dataEvent = await response.json();
+			console.log(dataEvent);
 			setEventos(dataEvent);
 		};
 		getEvents();
@@ -31,9 +32,9 @@ const EventContainerNext = () => {
 										title={evento.title}
 										thumbnail={evento.thumbnail}
 										description={evento.description}
-										datetime={evento.datetime}
-										isonline={evento.isonline}
-										ispresential={evento.ispresential}
+										date={evento.date}
+										isonline={evento.isOnline}
+										ispresential={evento.isPresential}
 									/>
 								)
 								: <p>&nbsp;Cargando Información... Espere un momento por favor...</p>

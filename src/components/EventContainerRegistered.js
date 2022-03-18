@@ -32,8 +32,8 @@ const EventContainerRegistered = () => {
 										thumbnail={evento.thumbnail}
 										description={evento.description}
 										date={evento.date}
-										isonline={evento.isonline}
-										ispresential={evento.ispresential}
+										isonline={evento.isOnline}
+										ispresential={evento.isPresential}
 									/>
 								)
 								: <p>&nbsp;Cargando Información... Espere un momento por favor...</p>
