@@ -48,10 +48,13 @@ npm start
 
 ## Autores ✒️
 
-<a href="https://github.com/Tech-Station-Hackathon/Frontend/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Tech-Station-Hackathon/Frontend" />
-</a>
-
+* Diego Fiorda
+* Dario Ajlin
+* Matías Majul
+* Gabriel Carrizo
+* Juan Liviero
+* Joaquin Decima
+* Rubén Alvarez
 
 ## Licencia 📄
 
