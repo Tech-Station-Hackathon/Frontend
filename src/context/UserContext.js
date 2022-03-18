@@ -2,7 +2,15 @@ import React, { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
 export const userContext = createContext();
 
-export const UserProvider = ({children}) => {
+const URL = 'https://techstationhackathon.herokuapp.com/api/users';
+const options = {
+	method: 'GET',
+	headers: {
+		'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjIzMzhiYzE2ZDAxNzZmMThlYjZhMGQ2In0sImlhdCI6MTY0NzU0OTg5MiwiZXhwIjoxNjQ3NjM2MjkyfQ.lP6bguKIy7_w4SWneflIRH6FF9MrvEcRKVb8Waz5P2U'
+	},
+};
+
+export const UserProvider = ({ children }) => {
 	const [user, setUser] = useState({ login: false });
 
 	UserProvider.propTypes = {
@@ -33,8 +41,22 @@ export const UserProvider = ({children}) => {
 	};
 
 	const login = (userEmail, userPassword) => {
-		setUser({email:userEmail,password:userPassword, login:true, role:'admin'});
-		sessionStorage.setItem(userEmail, JSON.stringify('email'));
+		let getUser = async () => {
+			let dataUser = await fetch(URL, options).
+				then(data => {
+					if (!data.ok) {
+						throw Error(data.status);
+					}
+					return data.json();
+
+				});
+			console.log(dataUser);
+			setUser({ email: dataUser.user.email, password: userPassword, login: true, role: dataUser.user.role, avatar: dataUser.user.avatar });
+			sessionStorage.setItem(userEmail, JSON.stringify('email'));
+
+		};
+		getUser();
+
 	};
 
 	return <userContext.Provider value={{ isUser, isLogin, addUser, user, setUser, login, closeSession }}>
