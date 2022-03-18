@@ -1,4 +1,4 @@
-// Contenedor de Eventos para usuarios sin registrarse
+// Contenedor de Eventos para usuarios no registrados
 import React from 'react';
 import Event from './Event';
 import { useState, useEffect } from 'react';
