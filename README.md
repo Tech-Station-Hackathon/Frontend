@@ -22,10 +22,12 @@ Una vez que tengamos las dependencias instaladas podemos ejecutarlo de la siguie
 npm start
 ```
 
-## Deployment 📦
+## Screen Shoots 📦
 
-_Este proyecto contiene ._
-
+![image](https://postimg.cc/xXFH8bfv)
+![image](https://postimg.cc/NKW6br3g)
+![image](https://postimg.cc/YhDfGP8L)
+![image](https://postimg.cc/mPc3QS6X)
 
 ## Construido con 🛠️
 
