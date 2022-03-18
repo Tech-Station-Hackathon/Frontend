@@ -32,7 +32,7 @@ _Este proyecto contiene ._
 * [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 * [ReactJS](https://reactjs.org/)
 * [FontAwesome](https://fontawesome.com/v5/)
-* [Bootstrap](https://getbootstrap.com/)
+* [Bootstrap]()
 
 ## Autores ✒️
 
