@@ -1,4 +1,6 @@
 # TechStation Academy - Hackathon - Equipo 4 - Desafio XXXX
+![image](https://user-images.githubusercontent.com/54006681/159043405-df27c9b7-624b-47a3-9d4a-c10813aaed5f.png)
+
 
 https://tech-station-hackathon.github.io/Frontend/
 
