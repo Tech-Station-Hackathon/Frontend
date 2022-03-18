@@ -19,6 +19,7 @@ const CreateAccount = () => {
 
 	const handleForm = (event) => {
 		event.preventDefault();
+	
 		/*
 		const createUser = async () => {
 			await 
