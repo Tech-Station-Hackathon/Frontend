@@ -52,7 +52,7 @@ const EventContainer = () => {
 						{
 							eventos.length > 0
 								? eventos.map((evento) =>
-									<Event key={evento.id}                                        
+									<Event key={evento.id}
 										id={evento.id}
 										title={evento.title}
 										thumbnail={evento.thumbnail}
@@ -62,8 +62,8 @@ const EventContainer = () => {
 										ispresential={evento.ispresential}
 									/>
 								)
-								: <p>&nbsp;Espere un momento por favor...</p>		
-						}				
+								: <p>&nbsp;Espere un momento por favor...</p>
+						}
 					</div>
 					<div className="col-0 col-md-2">
 					</div>

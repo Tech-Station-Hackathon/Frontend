@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import MediaPlayer from '../components/MediaPlayer';
 import NextEvents from '../pages/NextEvents';
 import HistoricEvents from '../pages/HistoricEvents';
+import CreateEvent from '../pages/CreateEvent';
 
 const Routers = () => {
 
@@ -24,6 +25,7 @@ const Routers = () => {
 					<Route path="/media" element={<MediaPlayer />} />
 					<Route path="/nextevents" element={<NextEvents />} />
 					<Route path="/historicevents" element={<HistoricEvents />} />
+					<Route path="/createEvent" element={<CreateEvent />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>
