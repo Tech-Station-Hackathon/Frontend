@@ -6,6 +6,11 @@ https://tech-station-hackathon.github.io/Frontend/
 
 ---
 
+Esta pagina permite la inscripcion de usuarios a distintos eventos online y presenciales para promocion de productos y servicios por parte de la empresa Telecom.
+Tambien es posible acceder a los eventos que han sido emitidos con anterioridad. 
+Una vez finalizado los mismos se le brinda al usuario la posibilidad de realizar una encuesta respecto a la valoracion del mismo.
+Esta informacion puede ser utilizada posteriormente por parte del rol de director para el analisis de datos.
+
 ## Comenzando 🚀
 
 Instalar las dependencias, esto lo podemos hacer de la siguiente manera:
@@ -24,10 +29,13 @@ npm start
 
 ## Screen Shoots 📦
 
-![image](https://postimg.cc/xXFH8bfv)
-![image](https://postimg.cc/NKW6br3g)
-![image](https://postimg.cc/YhDfGP8L)
-![image](https://postimg.cc/mPc3QS6X)
+![image](https://i.postimg.cc/FKhxPjwB/Screen1.png)
+---
+![image](https://i.postimg.cc/xdd6fvgb/Screen2.png)
+---
+![image](https://i.postimg.cc/htcCwWds/Screen3.png)
+---
+![image](https://i.postimg.cc/pLC0MGQH/Screen4.png)
 
 ## Construido con 🛠️
 
