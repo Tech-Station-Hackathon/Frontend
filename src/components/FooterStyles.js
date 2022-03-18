@@ -7,7 +7,7 @@ right: 0;
 width: 100%;
 height: 130px;
 background: black;
-`; 
+`;
 
 /* export const Box = styled.div`
 position: fixed;
@@ -28,7 +28,7 @@ justify-content: center;
 max-width: 100%;
 margin: 0 auto;
 /* background: red; */
-`
+`;
 
 export const Column = styled.div`
 display: flex;
