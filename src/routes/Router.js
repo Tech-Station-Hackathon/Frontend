@@ -12,6 +12,7 @@ import NextEvents from '../pages/NextEvents';
 import HistoricEvents from '../pages/HistoricEvents';
 import CreateEvent from '../pages/CreateEvent';
 import EventSurvey from '../pages/EventSurvey';
+import RolDirector from '../pages/RolDirector';
 
 const Routers = () => {
 
@@ -28,6 +29,7 @@ const Routers = () => {
 					<Route path="/historicevents" element={<HistoricEvents />} />
 					<Route path="/createEvent" element={<CreateEvent />} />
 					<Route path="/survey" element={<EventSurvey/>} />
+					<Route path="/RolDirector" element={<RolDirector/>} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>
