@@ -48,6 +48,6 @@ Esta página web se encuentra realizada solo para fines del Hackaton TechStation
 
 ## Expresiones de Gratitud 🎁
 
-* 
+* Un especial Agradecimiento hacia la empresa que nos permitió capacitarnos y formar parte de esta gran experiencia que es el primer Hackathon de la TechStation.
 
 ---
