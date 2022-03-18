@@ -12,16 +12,16 @@ const Carrusel = () => {
 				<div className="col-12">
 					<Carousel variant="dark" >
 						<Carousel.Item>
-							<img height={600} className="d-block w-100" src={Carrusel1} alt="First slide" />
+							<img height={450} className="d-block w-100" src={Carrusel1} alt="First slide" />
 						</Carousel.Item>
 						<Carousel.Item>
-							<img height={600} className="d-block w-100" src={Carrusel2} alt="Second slide" />
+							<img height={450} className="d-block w-100" src={Carrusel2} alt="Second slide" />
 						</Carousel.Item>
 						<Carousel.Item>
-							<img height={600} className="d-block w-100" src={Carrusel3} alt="Third slide" />
+							<img height={450} className="d-block w-100" src={Carrusel3} alt="Third slide" />
 						</Carousel.Item>
 						<Carousel.Item>
-							<img height={600} className="d-block w-100" src={Carrusel4} alt="Third slide" />
+							<img height={450} className="d-block w-100" src={Carrusel4} alt="Third slide" />
 						</Carousel.Item>                
 					</Carousel>
 				</div>
