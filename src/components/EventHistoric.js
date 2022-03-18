@@ -1,8 +1,7 @@
+// Detalle del Evento Historico
 import React from 'react';
-const reproducirEvento = () => {
+import { Link } from 'react-router-dom';
 
-}; 
- 
 const EventHistoric = (evento) => {
 	return (
 		<>
@@ -12,7 +11,7 @@ const EventHistoric = (evento) => {
 				<div className="card-body">
 					<h5 className="card-title">{evento.title}</h5>
 					<p className="card-text">{evento.description}</p>
-					<button type="button" onClick={() => reproducirEvento()} className="btn btn-primary btn-sm add" >Reproducir Evento</button>
+					<Link to="/media" className="btn btn-primary add btn-sm">Reproducir Evento</Link>
 				</div>
 			</div>
 			<br/><br/>

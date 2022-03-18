@@ -1,12 +1,13 @@
+// Detalle del Evento para usuarios registrados
 import React from 'react';
 
 const registerOnline = () => {
 
-}; 
+};
 
 const registerPresential = () => {
 
-}; 
+};
 
 const EventRegistered = (evento) => {
 	return (
@@ -22,7 +23,7 @@ const EventRegistered = (evento) => {
 						? <button type="button" onClick={() => registerOnline()} className="btn btn-primary btn-sm add" >Inscribirse Online</button>
 						: <div></div>
 					}
-                    &nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;
 					{evento.ispresential
 						? <button type="button" onClick={() => registerPresential()} className="btn btn-primary btn-sm add" >Inscribirse Presencial</button>
 						: <div></div>

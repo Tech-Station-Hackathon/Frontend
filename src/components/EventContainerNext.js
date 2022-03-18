@@ -1,3 +1,4 @@
+// Contenedor de Eventos Proximos
 import React from 'react';
 import EventRegistered from './EventRegistered';
 
@@ -52,7 +53,7 @@ const EventContainerNext = () => {
 						{
 							eventos.length > 0
 								? eventos.map((evento) =>
-									<EventRegistered key={evento.id}                                        
+									<EventRegistered key={evento.id}
 										id={evento.id}
 										title={evento.title}
 										thumbnail={evento.thumbnail}
