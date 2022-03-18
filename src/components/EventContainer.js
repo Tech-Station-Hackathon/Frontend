@@ -13,11 +13,11 @@ const EventContainer = () => {
 			setEventos(dataEvent);
 		};
 		getEvents();
-	},[]);
+	}, []);
 
 	return (
 		<>
-			<br/><br/>
+			<br /><br />
 			<div className="container">
 				<div className="row">
 					<div className="col-0 col-md-2">
