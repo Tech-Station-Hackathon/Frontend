@@ -1,0 +1,9 @@
+.color-light
+{
+  color:var(--light-blue);
+}
+
+.size-icon
+{
+  height: 40px;
+}

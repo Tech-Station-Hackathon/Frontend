@@ -5,6 +5,7 @@
   --text-input-field: #F7F7F7;
   --green: #21d2a3;
   --blue: #3c04a4;
+  --light-blue:#00aee6;
   --grey: #c9d2e2;
   --sm: 14px;
   --md: 16px;
@@ -19,4 +20,14 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
+}
+
+
+.color-blue
+{
+  color:var(--blue);
+}
+
+.bg-blue{
+  background-color: var(--blue);
 }
