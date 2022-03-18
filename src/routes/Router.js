@@ -22,6 +22,7 @@ const Routers = () => {
 				<Header />
 				<Routes>
 					<Route path='/' element={<Home />} />
+					<Route path='/Frontend' element={<Home />} />
 					<Route path='/create' element={<CreateAccount />} />
 					<Route path='/login' element={<Login />} />
 					<Route path="/media" element={<MediaPlayer />} />

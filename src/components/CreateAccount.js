@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { userContext } from '../context/UserContext';
+
 
 const CreateAccount = () => {
+	const { addUser } = useContext(userContext);
+
 	const [user, setUser] = useState({
 		name: '',
 		lastname:'',
@@ -14,12 +18,11 @@ const CreateAccount = () => {
 
 	const handleChangeUser = ({ name, value }) => {
 		setUser({ ...user, [name]: value });
-		console.log(user);
 	};
 
 	const handleForm = (event) => {
 		event.preventDefault();
-	
+		addUser(user);
 		/*
 		const createUser = async () => {
 			await 

@@ -1,4 +1,4 @@
-// Contenedor de Eventos Proximos
+// Contenedor de Eventos para usuarios registrados
 import React from 'react';
 import EventRegistered from './EventRegistered';
 
@@ -41,7 +41,7 @@ const eventos = [
 	}
 ];
 
-const EventContainerNext = () => {
+const EventContainerRegistered = () => {
 	return (
 		<>
 			<br/><br/>
@@ -63,7 +63,7 @@ const EventContainerNext = () => {
 										ispresential={evento.ispresential}
 									/>
 								)
-								: <p>&nbsp;Cargando Información... Espere un momento por favor...</p>
+								: <p>&nbsp;Espere un momento por favor...</p>
 						}
 					</div>
 					<div className="col-3">
@@ -74,4 +74,4 @@ const EventContainerNext = () => {
 	);
 };
 
-export default EventContainerNext;
+export default EventContainerRegistered;

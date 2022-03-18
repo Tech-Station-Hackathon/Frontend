@@ -1,50 +1,28 @@
+// Contenedor de Eventos para usuarios sin registrarse
 import React from 'react';
 import Event from './Event';
-
-const eventos = [
-	{
-		id: 1,
-		title: 'Nuevos modelos de Telefonos Celulares con VoLTE',
-		thumbnail: require('../assets/Carrusel1.jpg'),
-		description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
-		datetime: '29/03/2022 17:30hs',
-		isonline: true,
-		ispresential: true
-	},
-	{
-		id: 2,
-		title: 'Introduccion a IOT',
-		thumbnail: require('../assets/Carrusel2.jpg'),
-		description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
-		datetime: '30/03/2022 17:30hs',
-		isonline: true,
-		ispresential: false
-	},
-	{
-		id: 3,
-		title: 'Conectividad 4G para Grandes Empresas',
-		thumbnail: require('../assets/Carrusel3.jpg'),
-		description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
-		datetime: '04/04/2022 10:30hs',
-		isonline: false,
-		ispresential: true
-	},
-	{
-		id: 4,
-		title: 'Introduccion a la tecnologia 5G',
-		thumbnail: require('../assets/Carrusel4.jpg'),
-		description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
-		datetime: '08/04/2022 10:00hs',
-		isonline: true,
-		ispresential: false
-	}
-];
+import { useState, useEffect } from 'react';
 
 const EventContainer = () => {
+	const [eventos, setEventos] = useState({});
+
+	useEffect(() => {
+		let getEvents = async () => {
+			let response = await fetch('http://techstationhackathon.herokuapp.com/api/events');
+			let dataEvent = await response.json();
+			setEventos(dataEvent);
+		};
+		getEvents();
+	},[]);
+
 	return (
 		<>
 			<br/><br/>
+<<<<<<< HEAD
+			<div className="container">
+=======
 			<div className="container mb-4">
+>>>>>>> a60525184160e4e36877aaf5a74abd2729956908
 				<div className="row">
 					<div className="col-0 col-md-2">
 					</div>
@@ -57,12 +35,12 @@ const EventContainer = () => {
 										title={evento.title}
 										thumbnail={evento.thumbnail}
 										description={evento.description}
-										datetime={evento.datetime}
+										date={evento.date}
 										isonline={evento.isonline}
 										ispresential={evento.ispresential}
 									/>
 								)
-								: <p>&nbsp;Espere un momento por favor...</p>
+								: <p>&nbsp;Cargando Información... Espere un momento por favor...</p>
 						}
 					</div>
 					<div className="col-0 col-md-2">

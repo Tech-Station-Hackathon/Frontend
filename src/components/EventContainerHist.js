@@ -1,3 +1,4 @@
+// Contenedor de Eventos Historicos
 import React from 'react';
 import EventHistoric from './EventHistoric';
 
@@ -34,7 +35,7 @@ const EventContainerHist = () => {
 						{
 							eventos.length > 0
 								? eventos.map((evento) =>
-									<EventHistoric key={evento.id}                                        
+									<EventHistoric key={evento.id}
 										id={evento.id}
 										title={evento.title}
 										thumbnail={evento.thumbnail}
