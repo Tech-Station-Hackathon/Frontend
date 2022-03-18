@@ -1,18 +1,24 @@
-import React, { useContext,useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { userContext } from '../context/UserContext';
 
 const UserWidget = () => {
-	const { isLogin, closeSession, user,login } = useContext(userContext);
+	const { isLogin, closeSession, user, login } = useContext(userContext);
 
 	const handleCloseSession = () => {
 		closeSession();
 	};
 
-	useEffect(()=>{
-		login(JSON.parse(sessionStorage.getItem(sessionStorage.key(0))).user.email);
-		console.log(JSON.parse(sessionStorage.getItem(sessionStorage.key(0))).user);
-	},[]);
+	useEffect(() => {
+		if (sessionStorage.key(0) !== null) {
+			let userSession = JSON.parse(sessionStorage.getItem(sessionStorage.key(0))).user.email;
+			console.log(userSession);
+			userSession !== null ?
+				login(JSON.parse(sessionStorage.getItem(sessionStorage.key(0))).user.email)
+				:
+				console.log('No hay usario en sessio');
+		}
+	}, []);
 
 	return (
 		<nav className='col-4 navbar navbar-expand-lg navbar-light bg-light justify-content-end' >
@@ -23,7 +29,7 @@ const UserWidget = () => {
 				{
 					isLogin() ?
 						<div className='navbar-nav me-auto mb-2 mb-lg-0 '>
-							<img height={50}  className='nav-item rounded-circle me-5' src={user.avatar} alt="avatar" />
+							<img height={50} className='nav-item rounded-circle me-5' src={user.avatar} alt="avatar" />
 							<Link onClick={handleCloseSession} className='btn me-md-2 nav-item bg-blue text-light' to='/login' >Cerrar sesion</Link>
 						</div>
 						:

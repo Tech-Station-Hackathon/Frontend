@@ -5,9 +5,7 @@ export const userContext = createContext();
 const URL = 'https://techstationhackathon.herokuapp.com/api/users';
 const options = {
 	method: 'GET',
-	headers: {
-		'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjIzMzhiYzE2ZDAxNzZmMThlYjZhMGQ2In0sImlhdCI6MTY0NzU0OTg5MiwiZXhwIjoxNjQ3NjM2MjkyfQ.lP6bguKIy7_w4SWneflIRH6FF9MrvEcRKVb8Waz5P2U'
-	},
+
 };
 
 export const UserProvider = ({ children }) => {
