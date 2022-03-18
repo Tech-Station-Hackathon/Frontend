@@ -6,7 +6,7 @@ import {faTwitter, faInstagram} from '@fortawesome/fontawesome-free-brands';
 
 const Footer = () => {
 	return (
-		<footer className="bg-dark pt-4 pb-4" id="footer">
+		<footer className="footer mt-auto bg-dark pt-4 pb-4" id="footer">
 			<div className="container">
 				<div className="row text-center">
 					<div className="col-md-3">

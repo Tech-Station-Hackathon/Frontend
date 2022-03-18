@@ -1,5 +1,5 @@
 import React from 'react';
-import EventRegistered from './EventRegistered';
+import Event from './Event';
 
 const eventos = [
 	{
@@ -52,7 +52,7 @@ const EventContainerNext = () => {
 						{
 							eventos.length > 0
 								? eventos.map((evento) =>
-									<EventRegistered key={evento.id}                                        
+									<Event key={evento.id}                                        
 										id={evento.id}
 										title={evento.title}
 										thumbnail={evento.thumbnail}

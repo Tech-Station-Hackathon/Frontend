@@ -44,7 +44,7 @@ const EventContainer = () => {
 	return (
 		<>
 			<br/><br/>
-			<div className="container h-100">
+			<div className="container">
 				<div className="row">
 					<div className="col-3">
 					</div>
@@ -62,13 +62,15 @@ const EventContainer = () => {
 										ispresential={evento.ispresential}
 									/>
 								)
-								: <p>&nbsp;Espere un momento por favor...</p>
-						}
+								: <p>&nbsp;Espere un momento por favor...</p>		
+						}				
 					</div>
 					<div className="col-3">
 					</div>
 				</div>
 			</div>
+
+			
 		</>
 	);
 };

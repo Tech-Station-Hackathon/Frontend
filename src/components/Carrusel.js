@@ -8,27 +8,27 @@ import Carrusel4 from '../assets/Carrusel4.jpg';
 const Carrusel = () => {
 	return (
 		<>
-			<div className="container">
+			<div className="container mt-3">
 				<div className="row">
-					<div className="col-1">
+					<div className="col-0 col-md-2">
 					</div>
-					<div className="col-10">
-						<Carousel>
+					<div className="col-12 col-md-28">
+						<Carousel variant="dark" >
 							<Carousel.Item>
-								<img height={200} className="d-block w-100" src={Carrusel1} alt="First slide" />
+								<img height={300} className="d-block w-100" src={Carrusel1} alt="First slide" />
 							</Carousel.Item>
 							<Carousel.Item>
-								<img height={200} className="d-block w-100" src={Carrusel2} alt="Second slide" />
+								<img height={300} className="d-block w-100" src={Carrusel2} alt="Second slide" />
 							</Carousel.Item>
 							<Carousel.Item>
-								<img height={200} className="d-block w-100" src={Carrusel3} alt="Third slide" />
+								<img height={300} className="d-block w-100" src={Carrusel3} alt="Third slide" />
 							</Carousel.Item>
 							<Carousel.Item>
-								<img height={200} className="d-block w-100" src={Carrusel4} alt="Third slide" />
+								<img height={300} className="d-block w-100" src={Carrusel4} alt="Third slide" />
 							</Carousel.Item>                
 						</Carousel>
 					</div>
-					<div className="col-1">
+					<div className="col-0 col-md-2">
 					</div>
 				</div>
 			</div>
