@@ -13,7 +13,7 @@ const NavBar = () => {
 						<div className="container-fluid">
 							<div className="" id="navbarSupportedContent">
 								<ul className="navbar-nav me-auto mb-2 mb-lg-0">
-									{user.rol === 'director' ?
+									{user.role === 'director' ?
 										<Link className="nav-link" to="/historicevents">Analíticas</Link>
 										: <></>
 									}
@@ -25,7 +25,7 @@ const NavBar = () => {
 											<li><Link className="dropdown-item" to="/nextevents">Próximos</Link></li>
 											<li><Link className="dropdown-item" to="/historicevents">Históricos</Link></li>
 											<li><hr className="dropdown-divider" /></li>
-											{user.rol === 'admin' ?
+											{user.role === 'admin' ?
 												<li><Link className="dropdown-item" to="/createEvent">Crear Evento</Link></li>
 												: <></>
 											}
