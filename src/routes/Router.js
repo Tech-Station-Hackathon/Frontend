@@ -11,6 +11,7 @@ import MediaPlayer from '../components/MediaPlayer';
 import NextEvents from '../pages/NextEvents';
 import HistoricEvents from '../pages/HistoricEvents';
 import CreateEvent from '../pages/CreateEvent';
+import EventSurvey from '../pages/EventSurvey';
 
 const Routers = () => {
 
@@ -26,6 +27,7 @@ const Routers = () => {
 					<Route path="/nextevents" element={<NextEvents />} />
 					<Route path="/historicevents" element={<HistoricEvents />} />
 					<Route path="/createEvent" element={<CreateEvent />} />
+					<Route path="/survey" element={<EventSurvey/>} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>

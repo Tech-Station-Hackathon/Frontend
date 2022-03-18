@@ -14,7 +14,7 @@ const MediaPlayer = () => {
 			</div>
 
 			<div className="">
-				<Link to="/encuesta" className="btn btn-primary add m-2">
+				<Link to="/survey" className="btn btn-primary add m-2">
                         Encuesta
 				</Link>
 			</div>
