@@ -31,10 +31,11 @@ const CreateEvent = () => {
 	return (
 		<div className='d-flex justify-content-center '>
 			<form
-				className="form-signin m-5 p-4 "
+				className="form-signin m-2 p-4 "
 				onSubmit={handleForm}
 				onChange={({ target }) => handleChangeUser(target)}>
-				<div className="input-group mb-3">
+				<h1>Creador de eventos</h1>
+				<div className="input-group mb-3 mt-4">
 					<input type="date" name="date" id="date" min="2022-03-18" max="2022-12-31" required />
 				</div>
 
