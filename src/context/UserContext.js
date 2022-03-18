@@ -33,6 +33,7 @@ export const UserProvider = ({children}) => {
 	};
 
 	const login = (userEmail, userPassword) => {
+		
 		setUser({email:userEmail,password:userPassword, login:true, rol:'admin'});
 		sessionStorage.setItem(userEmail, JSON.stringify('email'));
 	};

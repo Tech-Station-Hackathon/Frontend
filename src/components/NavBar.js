@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { userContext } from '../context/UserContext';
 
 const NavBar = () => {
-	const { isLogin,user } = useContext(userContext);
+	const { isLogin, user } = useContext(userContext);
 
 	return (
 		<div className="col-4">
@@ -11,8 +11,12 @@ const NavBar = () => {
 				isLogin() ?
 					<nav className="navbar navbar-expand-md navbar-light bg-light">
 						<div className="container-fluid">
-							<div className="collapse navbar-collapse" id="navbarSupportedContent">
+							<div className="" id="navbarSupportedContent">
 								<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+									{user.rol === 'director' ?
+										<Link className="nav-link" to="/historicevents">Analíticas</Link>
+										: <></>
+									}
 									<li className="nav-item dropdown">
 										<Link className="nav-link dropdown-toggle text-dark" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 											Eventos
@@ -23,11 +27,6 @@ const NavBar = () => {
 											<li><hr className="dropdown-divider" /></li>
 											{user.rol === 'admin' ?
 												<li><Link className="dropdown-item" to="/createEvent">Crear Evento</Link></li>
-												: <></>
-											}
-											<li><hr className="dropdown-divider" /></li>
-											{user.rol === 'director' ?
-												<li><Link className="dropdown-item" to="/historicevents">Analíticas</Link></li>
 												: <></>
 											}
 										</ul>
