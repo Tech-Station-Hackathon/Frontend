@@ -1,8 +1,13 @@
 import React, { createContext, useState } from 'react';
+import PropTypes from 'prop-types';
 export const userContext = createContext();
 
 export const UserProvider = ({children}) => {
 	const [user, setUser] = useState({ login: false });
+
+	UserProvider.propTypes = {
+		children: PropTypes.node.isRequired,
+	};
 
 	const addUser = (user) => {
 		setUser({
