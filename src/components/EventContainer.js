@@ -44,11 +44,11 @@ const EventContainer = () => {
 	return (
 		<>
 			<br/><br/>
-			<div className="container">
+			<div className="container mb-4">
 				<div className="row">
-					<div className="col-3">
+					<div className="col-0 col-md-2">
 					</div>
-					<div className="col-6">
+					<div className="col-12 col-md-8">
 						{
 							eventos.length > 0
 								? eventos.map((evento) =>
@@ -65,7 +65,7 @@ const EventContainer = () => {
 								: <p>&nbsp;Espere un momento por favor...</p>		
 						}				
 					</div>
-					<div className="col-3">
+					<div className="col-0 col-md-2">
 					</div>
 				</div>
 			</div>
