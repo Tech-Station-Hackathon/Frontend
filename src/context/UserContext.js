@@ -1,9 +1,7 @@
 import React, { createContext, useState } from 'react';
-
-
 export const userContext = createContext();
 
-export const UserProvider = ({ children }) => {
+export const UserProvider = ({children}) => {
 	const [user, setUser] = useState({ login: false });
 
 	const addUser = (user) => {
@@ -12,7 +10,7 @@ export const UserProvider = ({ children }) => {
 			email: user.email,
 			password: user.passwor,
 			login: user.login,
-			rol:user.rol
+			rol: user.rol
 		});
 	};
 
@@ -32,19 +30,8 @@ export const UserProvider = ({ children }) => {
 	const login = (userEmail, userPassword) => {
 		setUser({email:userEmail,password:userPassword, login:true});
 		sessionStorage.setItem(userEmail, JSON.stringify('email'));
-
-		/*
-      const getProducts = async () => {
-            const { docs } = await
-                getDocs(query(collection(db, "users"),
-                    where("email", "==", userEmail),
-                    where("password", "==", userPassword)))
-            docs.forEach((doc) => {
-                setUser({ ...doc.data(), login: true })
-            })
-        }
-        getProducts()*/
 	};
+
 	return <userContext.Provider value={{ isUser, isLogin, addUser, user, setUser, login, closeSession }}>
 		{children}
 	</userContext.Provider>;
