@@ -12,17 +12,6 @@ const Event = (evento) => {
 
 	};
 	return (
-<<<<<<< HEAD
-		<>
-			<br/><br/>
-			<div className="card">
-				<img src="require({evento.thumbnail})" height={150} width={50} className="card-img-top" alt={evento.title} />
-				<div className="card-body">
-					<h5 className="card-title">{evento.title}</h5>
-					<p className="card-text">{evento.description}</p>
-					<p className="card-text">Fecha del Evento: {evento.date}</p>
-				</div>
-=======
 		<div className="card mt-5">
 			<img src={evento.thumbnail} height={150} width={50} className="card-img-top" alt={evento.title} />
 			<div className="card-body text-center">
@@ -43,7 +32,6 @@ const Event = (evento) => {
 					</div>
 					: <></>
 				}
->>>>>>> a60525184160e4e36877aaf5a74abd2729956908
 			</div>
 		</div>
 	);
