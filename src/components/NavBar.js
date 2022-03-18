@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { userContext } from '../context/UserContext';
 
 const NavBar = () => {
-	const { isLogin } = useContext(userContext);
+	const { isLogin, user } = useContext(userContext);
 
 	return (
 		<div className="col-4">
@@ -11,16 +11,29 @@ const NavBar = () => {
 				isLogin() ?
 					<nav className="navbar navbar-expand-md navbar-light bg-light">
 						<div className="container-fluid">
-							<div className="collapse navbar-collapse" id="navbarSupportedContent">
+							<div className="" id="navbarSupportedContent">
 								<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+									{user.role === 'director' ?
+										<Link className="nav-link" to="/RolDirector">Analíticas</Link>
+										: <></>
+									}
 									<li className="nav-item dropdown">
 										<Link className="nav-link dropdown-toggle text-dark" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Eventos
+											Eventos
 										</Link>
 										<ul className="dropdown-menu" aria-labelledby="navbarDropdown">
 											<li><Link className="dropdown-item" to="/nextevents">Próximos</Link></li>
+<<<<<<< HEAD
 											<li><hr className="dropdown-divider" /></li>
 											<li><Link className="dropdown-item" to="/historicevents">Históricos</Link></li>                      
+=======
+											<li><Link className="dropdown-item" to="/historicevents">Históricos</Link></li>
+											<li><hr className="dropdown-divider" /></li>
+											{user.role === 'admin' ?
+												<li><Link className="dropdown-item" to="/createEvent">Crear Evento</Link></li>
+												: <></>
+											}
+>>>>>>> a60525184160e4e36877aaf5a74abd2729956908
 										</ul>
 									</li>
 								</ul>

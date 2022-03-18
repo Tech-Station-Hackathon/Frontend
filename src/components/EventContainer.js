@@ -18,15 +18,19 @@ const EventContainer = () => {
 	return (
 		<>
 			<br/><br/>
+<<<<<<< HEAD
 			<div className="container">
+=======
+			<div className="container mb-4">
+>>>>>>> a60525184160e4e36877aaf5a74abd2729956908
 				<div className="row">
-					<div className="col-3">
+					<div className="col-0 col-md-2">
 					</div>
-					<div className="col-6">
+					<div className="col-12 col-md-8">
 						{
 							eventos.length > 0
 								? eventos.map((evento) =>
-									<Event key={evento.id}                                        
+									<Event key={evento.id}
 										id={evento.id}
 										title={evento.title}
 										thumbnail={evento.thumbnail}
@@ -39,10 +43,12 @@ const EventContainer = () => {
 								: <p>&nbsp;Cargando Información... Espere un momento por favor...</p>
 						}
 					</div>
-					<div className="col-3">
+					<div className="col-0 col-md-2">
 					</div>
 				</div>
 			</div>
+
+			
 		</>
 	);
 };

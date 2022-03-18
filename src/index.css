@@ -31,3 +31,22 @@ body {
 .bg-blue{
   background-color: var(--blue);
 }
+
+.bg-grey{
+  background-color: var(--grey);
+}
+
+.color-black
+{
+  color: var(--black);
+}
+
+.color-light
+{
+  color:var(--light-blue);
+}
+
+.size-icon
+{
+  height: 40px;
+}

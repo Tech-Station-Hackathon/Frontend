@@ -25,7 +25,7 @@ module.exports = {
 		],
 		'linebreak-style': [
 			'error',
-			'windows'
+			process.platform === 'win32' ? 'windows' : 'unix'
 		],
 		'quotes': [
 			'error',
@@ -34,6 +34,8 @@ module.exports = {
 		'semi': [
 			'error',
 			'always'
-		]
+		],
+		'react/prop-types': 
+		['off'],
 	}
 };

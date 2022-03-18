@@ -50,6 +50,8 @@ const EventContainerHist = () => {
 				</div>
 			</div>
 		</>
+
+		
 	);
 };
 

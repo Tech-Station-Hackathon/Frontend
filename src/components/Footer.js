@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faTwitter, faInstagram} from '@fortawesome/fontawesome-free-brands';
 
+
+
 const Footer = () => {
 	return (
 		<footer className="bg-dark pt-4 pb-4" id="footer">
@@ -48,5 +50,4 @@ const Footer = () => {
 		</footer>
 	);
 };
-
 export default Footer;
