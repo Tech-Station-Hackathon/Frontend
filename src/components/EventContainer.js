@@ -18,11 +18,7 @@ const EventContainer = () => {
 	return (
 		<>
 			<br/><br/>
-<<<<<<< HEAD
 			<div className="container">
-=======
-			<div className="container mb-4">
->>>>>>> a60525184160e4e36877aaf5a74abd2729956908
 				<div className="row">
 					<div className="col-0 col-md-2">
 					</div>

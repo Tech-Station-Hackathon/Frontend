@@ -11,13 +11,18 @@ const Event = (evento) => {
 	const registerPresential = () => {
 
 	};
+	
+	const parseDateTime = (date) => {
+		return `${date.getDate()}/${date.getMonth()}/${date.getYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+	};
+
 	return (
 		<div className="card mt-5">
 			<img src={evento.thumbnail} height={150} width={50} className="card-img-top" alt={evento.title} />
 			<div className="card-body text-center">
 				<h5 className="card-title fw-bold">{evento.title}</h5>
 				<p className="card-text " >{evento.description}</p>
-				<p className="card-text ">Fecha del Evento: {evento.datetime}</p>
+				<p className="card-text ">Fecha del Evento: {parseDateTime(new Date(evento.date))}</p>
 				{isLogin() ?
 					<div className='d-flex gap-5 justify-content-center'>
 						{evento.isonline ?

@@ -9,6 +9,10 @@ const registerPresential = () => {
 
 };
 
+const parseDateTime = (date) => {
+	return `${date.getDate()}/${date.getMonth()}/${date.getYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+};
+
 const EventRegistered = (evento) => {
 	return (
 		<>
@@ -18,7 +22,7 @@ const EventRegistered = (evento) => {
 				<div className="card-body">
 					<h5 className="card-title">{evento.title}</h5>
 					<p className="card-text">{evento.description}</p>
-					<p className="card-text">Fecha del Evento: {evento.datetime}</p>
+					<p className="card-text">Fecha del Evento: {parseDateTime(new Date(evento.date))}</p>
 					{evento.isonline
 						? <button type="button" onClick={() => registerOnline()} className="btn btn-primary btn-sm add" >Inscribirse Online</button>
 						: <div></div>
