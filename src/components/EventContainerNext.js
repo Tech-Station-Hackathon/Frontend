@@ -1,4 +1,4 @@
-import Event from './Event'
+import EventRegistered from './EventRegistered'
 
 const eventos = [
     {
@@ -39,11 +39,11 @@ const eventos = [
     }
 ];
 
-const EventContainer = () => {
+const EventContainerNext = () => {
     return (
         <>
             <br/><br/>
-            <div className="container h-100">
+            <div className="container">
                 <div className="row">
                     <div className="col-3">
                     </div>
@@ -51,14 +51,14 @@ const EventContainer = () => {
                         {
                             eventos.length > 0
                             ? eventos.map((evento) =>
-                                <Event key={evento.id}                                        
-                                    id={evento.id}
-                                    title={evento.title}
-                                    thumbnail={evento.thumbnail}
-                                    description={evento.description}
-                                    datetime={evento.datetime}
-                                    isonline={evento.isonline}
-                                    ispresential={evento.ispresential}
+                                <EventRegistered key={evento.id}                                        
+                                       id={evento.id}
+                                       title={evento.title}
+                                       thumbnail={evento.thumbnail}
+                                       description={evento.description}
+                                       datetime={evento.datetime}
+                                       isonline={evento.isonline}
+                                       ispresential={evento.ispresential}
                                 />
                             )
                             : <p>&nbsp;Espere un momento por favor...</p>
@@ -72,4 +72,4 @@ const EventContainer = () => {
     );
 }
 
-export default EventContainer;
+export default EventContainerNext;
