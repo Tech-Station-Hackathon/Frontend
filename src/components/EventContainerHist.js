@@ -8,7 +8,7 @@ const EventContainerHist = () => {
 
 	useEffect(() => {
 		let getEvents = async () => {
-			let response = await fetch('http://techstationhackathon.herokuapp.com/api/events');
+			let response = await fetch('https://techstationhackathon.herokuapp.com/api/events');
 			let dataEvent = await response.json();
 			setEventos(dataEvent);
 		};
