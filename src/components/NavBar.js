@@ -23,17 +23,12 @@ const NavBar = () => {
 										</Link>
 										<ul className="dropdown-menu" aria-labelledby="navbarDropdown">
 											<li><Link className="dropdown-item" to="/nextevents">Próximos</Link></li>
-<<<<<<< HEAD
-											<li><hr className="dropdown-divider" /></li>
-											<li><Link className="dropdown-item" to="/historicevents">Históricos</Link></li>                      
-=======
 											<li><Link className="dropdown-item" to="/historicevents">Históricos</Link></li>
 											<li><hr className="dropdown-divider" /></li>
 											{user.role === 'admin' ?
 												<li><Link className="dropdown-item" to="/createEvent">Crear Evento</Link></li>
 												: <></>
 											}
->>>>>>> a60525184160e4e36877aaf5a74abd2729956908
 										</ul>
 									</li>
 								</ul>

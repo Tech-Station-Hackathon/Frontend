@@ -61,7 +61,7 @@ export const UserProvider = ({ children }) => {
 	};
 
 	const isDirector = ()=>{
-		return (user.role==='director'?true:false);
+		return (user.role==='manage'?true:false);
 	};
 
 	const login = (userEmail, userPassword) => {
@@ -90,7 +90,7 @@ export const UserProvider = ({ children }) => {
 		getUser();
 
 	};
-
+	
 	return <userContext.Provider value={{ isUser, isLogin, addUser, user, setUser, login, closeSession,isAdmin , isDirector}}>
 		{children}
 	</userContext.Provider>;

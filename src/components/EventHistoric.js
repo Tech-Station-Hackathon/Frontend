@@ -11,11 +11,7 @@ const EventHistoric = (evento) => {
 				<div className="card-body">
 					<h5 className="card-title">{evento.title}</h5>
 					<p className="card-text">{evento.description}</p>
-<<<<<<< HEAD
-					<Link to="/media" className="btn btn-primary add btn-sm">Reproducir Evento</Link>
-=======
 					<Link to="/media" type="button" className="btn btn-primary btn-sm add" >Reproducir Evento</Link>
->>>>>>> a60525184160e4e36877aaf5a74abd2729956908
 				</div>
 			</div>
 			<br /><br />

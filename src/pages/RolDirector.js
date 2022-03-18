@@ -1,11 +1,7 @@
 import React ,{useContext}from 'react';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
 import Estadistica2 from '../assets/Estadistica2.jpg';
-=======
 import { userContext } from '../context/UserContext';
->>>>>>> 3154482f6698c73e100750a35d40ad3d570eaf4a
-
 const RolDirector = () => {
 	const { isDirector } = useContext(userContext);
 

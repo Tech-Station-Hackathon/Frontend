@@ -1,13 +1,18 @@
-import React, { useContext } from 'react';
+import React, { useContext,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { userContext } from '../context/UserContext';
 
 const UserWidget = () => {
-	const { isLogin, closeSession, user } = useContext(userContext);
+	const { isLogin, closeSession, user,login } = useContext(userContext);
 
 	const handleCloseSession = () => {
 		closeSession();
 	};
+
+	useEffect(()=>{
+		login(JSON.parse(sessionStorage.getItem(sessionStorage.key(0))).user.email);
+		console.log(JSON.parse(sessionStorage.getItem(sessionStorage.key(0))).user);
+	},[]);
 
 	return (
 		<nav className='col-4 navbar navbar-expand-lg navbar-light bg-light justify-content-end' >

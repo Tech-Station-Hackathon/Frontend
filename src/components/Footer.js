@@ -8,11 +8,11 @@ const Footer = () => {
 	return (
 		<footer className="bg-dark pt-4 pb-4" id="footer">
 			<div className="container">
-				<div className="row text-center">
+				<div className="row text-center ">
 					<div className="col-md-3">
 						<h3 className="text-white">ACERCA DE</h3>
-						<ul className="list-group mt-3">
-							<li className="list-group-item bg-dark text-white">Compañia</li>
+						<ul className="list-group mt-3 " >
+							<li className="list-group-item bg-dark text-white ">Compañia</li>
 							<li className="list-group-item bg-dark text-white">Equipo</li>
 							<li className="list-group-item bg-dark text-white">Inversores</li>
 						</ul>
