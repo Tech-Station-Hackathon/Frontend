@@ -14,7 +14,6 @@ const Login = () => {
 	const handleForm = (event) => {
 		event.preventDefault();
 		login(user.email, user.password);
-		console.log(`Login=> EMAIL:${user.email} PASSWORD:${user.password}`);
 	};
 
 	const handleChangeUser = ({ name, value }) => {

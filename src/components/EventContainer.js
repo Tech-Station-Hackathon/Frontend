@@ -42,36 +42,31 @@ const eventos = [
 
 const EventContainer = () => {
 	return (
-		<>
-			<br/><br/>
-			<div className="container">
-				<div className="row">
-					<div className="col-3">
-					</div>
-					<div className="col-6">
-						{
-							eventos.length > 0
-								? eventos.map((evento) =>
-									<Event key={evento.id}                                        
-										id={evento.id}
-										title={evento.title}
-										thumbnail={evento.thumbnail}
-										description={evento.description}
-										datetime={evento.datetime}
-										isonline={evento.isonline}
-										ispresential={evento.ispresential}
-									/>
-								)
-								: <p>&nbsp;Espere un momento por favor...</p>		
-						}				
-					</div>
-					<div className="col-3">
-					</div>
+		<div className="container">
+			<div className="row">
+				<div className="col-3">
+				</div>
+				<div className="col-6">
+					{
+						eventos.length > 0
+							? eventos.map((evento) =>
+								<Event key={evento.id}
+									id={evento.id}
+									title={evento.title}
+									thumbnail={evento.thumbnail}
+									description={evento.description}
+									datetime={evento.datetime}
+									isonline={evento.isonline}
+									ispresential={evento.ispresential}
+								/>
+							)
+							: <p>&nbsp;Espere un momento por favor...</p>
+					}
+				</div>
+				<div className="col-3">
 				</div>
 			</div>
-
-			
-		</>
+		</div>
 	);
 };
 
