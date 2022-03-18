@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Estadistica2 from '../assets/Estadistica2.jpg';
 
 const RolDirector = () => {
 
@@ -26,7 +26,7 @@ const RolDirector = () => {
 							<option value="1">Internet</option>
 							<option value="2">Móvil</option>
 							<option value="3">IOT</option>
-							<option value="4">Atención al cliente</option>
+							<option value="4">Market Share</option>
 						</select>
 					</div>
 					<div className="input-group mb-3">
@@ -44,7 +44,10 @@ const RolDirector = () => {
 							<Link to="/" className="btn btn-primary">Enviar y Descargar</Link>
 						</div>
 					</div>
-				</form>     
+				</form> 
+				<br />
+				<h4>Gráfico de Analisis Internet</h4>
+				<img src={Estadistica2} alt="Estadistica2.jpg" />  
 			</div>
 		</div>
 	);
