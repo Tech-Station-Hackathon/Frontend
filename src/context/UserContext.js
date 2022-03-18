@@ -5,7 +5,6 @@ export const userContext = createContext();
 const URL = 'https://techstationhackathon.herokuapp.com/api/users';
 const options = {
 	method: 'GET',
-
 };
 
 export const UserProvider = ({ children }) => {
@@ -65,10 +64,8 @@ export const UserProvider = ({ children }) => {
 	const login = (userEmail, userPassword) => {
 		let getUser = async () => {
 			let response = await fetch(URL, options);
-			let dataUser = await response.json();
-			console.log(dataUser);
-			
-			if (dataUser.user.email === userEmail) {
+			if (response.status === 200) {
+				let dataUser = await response.json();
 				setUser({
 					name: dataUser.user.name,
 					lastName: dataUser.user.lastname,

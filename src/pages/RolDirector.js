@@ -1,17 +1,14 @@
-import React ,{useContext}from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Estadistica2 from '../assets/Estadistica2.jpg';
-import { userContext } from '../context/UserContext';
-const RolDirector = () => {
-	const { isDirector } = useContext(userContext);
 
+const RolDirector = () => {
 
 	return (
 		<div className='d-flex justify-content-center '>
 			<div className="form-signin m-5 p-4 ">
 				<div className="card-body text-center">
 					<h1 >Estadisticas de Negocio</h1>
-					{isDirector()? <p>Eres director</p>: <p>No eres director</p>}
 				</div>
 				<form>
 					<div className="input-group mb-3">

@@ -13,6 +13,7 @@ import HistoricEvents from '../pages/HistoricEvents';
 import CreateEvent from '../pages/CreateEvent';
 import EventSurvey from '../pages/EventSurvey';
 import RolDirector from '../pages/RolDirector';
+import HomeRegistered from '../pages/HomeRegistered';
 
 const Routers = () => {
 
@@ -28,6 +29,7 @@ const Routers = () => {
 					<Route path="/media" element={<MediaPlayer />} />
 					<Route path="/nextevents" element={<NextEvents />} />
 					<Route path="/historicevents" element={<HistoricEvents />} />
+					<Route path="/homeregistered" element={<HomeRegistered />} />
 					<Route path="/createEvent" element={<CreateEvent />} />
 					<Route path="/survey" element={<EventSurvey/>} />
 					<Route path="/RolDirector" element={<RolDirector/>} />

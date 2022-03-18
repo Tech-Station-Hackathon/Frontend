@@ -13,12 +13,12 @@ const EventContainer = () => {
 			setEventos(dataEvent);
 		};
 		getEvents();
-	},[]);
+	}, []);
 
 	return (
 		<>
-			<br/><br/>
-			<div className="container mb-4">
+			<br /><br />
+			<div className="container">
 				<div className="row">
 					<div className="col-0 col-md-2">
 					</div>
@@ -32,8 +32,8 @@ const EventContainer = () => {
 										thumbnail={evento.thumbnail}
 										description={evento.description}
 										date={evento.date}
-										isonline={evento.isonline}
-										ispresential={evento.ispresential}
+										isonline={evento.isOnline}
+										ispresential={evento.isPresential}
 									/>
 								)
 								: <p>&nbsp;Cargando Información... Espere un momento por favor...</p>
@@ -43,8 +43,6 @@ const EventContainer = () => {
 					</div>
 				</div>
 			</div>
-
-			
 		</>
 	);
 };
