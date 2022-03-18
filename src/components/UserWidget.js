@@ -2,8 +2,6 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { userContext } from '../context/UserContext';
 
-import '../styles/UserWidget.css';
-
 const UserWidget = () => {
 	const { isLogin, closeSession,user} = useContext(userContext);
 

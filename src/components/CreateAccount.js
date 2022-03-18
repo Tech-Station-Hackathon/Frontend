@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/CreateAccount.css';
 
 const CreateAccount = () => {
 	return (

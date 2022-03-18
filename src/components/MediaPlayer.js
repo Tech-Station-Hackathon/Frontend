@@ -2,8 +2,6 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
 
-import '../styles/MediaPlayer.css';
-
 const MediaPlayer = () => {
 
 	return (
